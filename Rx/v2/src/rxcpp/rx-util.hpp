@@ -713,8 +713,8 @@ namespace detail {
 
 template<class... T>
 inline auto surely(const std::tuple<T...>& tpl)
-    -> decltype(apply(tpl, detail::surely())) {
-    return      apply(tpl, detail::surely());
+    -> decltype(util::apply(tpl, detail::surely())) {
+    return      util::apply(tpl, detail::surely());
 }
 
 namespace detail {
